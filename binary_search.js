@@ -8,11 +8,6 @@ let recursiveFunction = function (arr, x, start, end) {
         return recursiveFunction(arr, x, mid+1, end);
 }
 let arr = [1, 3, 5, 7, 8, 9];
-let x = 5;
-if (recursiveFunction(arr, x, 0, arr.length-1))
-    console.log("Element found!");
-else console.log("Element not found!");
-x = 6;
-if (recursiveFunction(arr, x, 0, arr.length-1))
+if (recursiveFunction(arr, 6, 0, arr.length-1))
     console.log("Element found!");
 else console.log("Element not found!");
